@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20141012150146) do
 
   create_table "todo_items", force: true do |t|
-    t.string   "content"
+    t.string   "content",      null: false
     t.integer  "todo_list_id"
     t.datetime "created_at"
     t.datetime "updated_at"
