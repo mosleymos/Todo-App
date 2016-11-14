@@ -20,5 +20,8 @@ group :development, :test do
   gem 'annotate', '2.6.5'
   gem 'guard', '2.14.0'
   gem 'guard-livereload', '2.5.2'
+  gem 'guard-minitest', '2.4.6'
   gem 'rubocop','0.43.0' , require: false
 end
+
+gem 'simplecov','0.12.0' , require: false, group: :test
