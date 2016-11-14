@@ -3,12 +3,13 @@
 # Table name: todo_lists
 #
 #  id          :integer          not null, primary key
-#  title       :string(255)
-#  description :text
+#  title       :string(255)      not null
+#  description :text             default("No description available")
 #  created_at  :datetime
 #  updated_at  :datetime
 #
 
 class TodoList < ActiveRecord::Base
+  validates :title, presence: true
 	has_many :todo_items
 end
