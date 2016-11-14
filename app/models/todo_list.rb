@@ -11,5 +11,5 @@
 
 class TodoList < ActiveRecord::Base
   validates :title, presence: true
-	has_many :todo_items
+  has_many :todo_items
 end

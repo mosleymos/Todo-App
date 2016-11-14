@@ -17,9 +17,9 @@
 require 'test_helper'
 
 class TodoItemTest < ActiveSupport::TestCase
-  test "simple TODO item creation" do
+  test 'simple TODO item creation' do
     simple_todo_list = todo_lists(:groceries_list)
-    simple_todo_item = TodoItem.create(content: "Buy some mustard", todo_list_id: simple_todo_list.id )
+    simple_todo_item = TodoItem.create(content: 'Buy some mustard', todo_list_id: simple_todo_list.id)
     assert_equal 3,  TodoItem.count
   end
 end
