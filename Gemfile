@@ -13,6 +13,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
 
+# Rails haml templates
+gem 'haml-rails', '~> 0.9'
+
 group :development, :test do
   gem 'annotate', '2.6.5'
   gem 'guard', '2.14.0'
