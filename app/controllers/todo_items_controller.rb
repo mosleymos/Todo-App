@@ -10,10 +10,11 @@ class TodoItemsController < ApplicationController
   def destroy
     if @todo_item.destroy
       flash[:success] = 'Todo List item was deleted.'
+      redirect_to @todo_list
     else
       flash[:error] = 'Todo List item could not be deleted.'
+      redirect_to @todo_list
     end
-    redirect_to @todo_list
   end
 
   def complete
