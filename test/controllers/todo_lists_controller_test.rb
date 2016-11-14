@@ -2,7 +2,7 @@ require 'test_helper'
 
 class TodoListsControllerTest < ActionController::TestCase
   setup do
-    @todo_list = todo_lists(:one)
+    @todo_list = todo_lists(:groceries_list)
   end
 
   test "should get index" do

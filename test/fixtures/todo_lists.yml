@@ -11,10 +11,10 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  description: MyText
+groceries_list:
+  title: Groceries List
+  description: Some groceries to buy
 
-two:
-  title: MyString
-  description: MyText
+work_to_do:
+  title: Work to do
+  description: Some task to make for a project

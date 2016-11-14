@@ -16,10 +16,10 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  content: MyString
-  todo_list_id: 
+task1:
+  content: Buy some grapes
+  todo_list_id: groceries_list
 
-two:
-  content: MyString
-  todo_list_id: 
+task2:
+  content: Write some report
+  todo_list_id: work_to_do
