@@ -15,4 +15,6 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'annotate', '2.6.5'
+  gem 'guard', '2.14.0'
+  gem 'guard-livereload', '2.5.2'
 end
