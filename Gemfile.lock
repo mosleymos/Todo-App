@@ -50,6 +50,8 @@ GEM
       capybara-console
       database_cleaner
       exception_notification
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.1)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
@@ -105,6 +107,7 @@ GEM
       ruby_parser (~> 3.5)
     http_parser.rb (0.6.0)
     i18n (0.6.11)
+    iniparse (1.4.2)
     jbuilder (2.2.2)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
@@ -144,6 +147,9 @@ GEM
     notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
+    overcommit (0.37.0)
+      childprocess (~> 0.5.8)
+      iniparse (~> 1.4)
     parser (2.3.1.4)
       ast (~> 2.2)
     polyglot (0.3.5)
@@ -247,6 +253,7 @@ DEPENDENCIES
   jquery-rails
   minitest-rails
   minitest-rails-capybara
+  overcommit
   pry
   rails (= 4.1.5)
   rubocop (= 0.43.0)

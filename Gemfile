@@ -28,6 +28,10 @@ group :development, :test do
   gem 'capybara-rails'
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
+
+  # Overcommit
+  gem 'overcommit'
+
 end
 
 gem 'simplecov','0.12.0' , require: false, group: :test
