@@ -29,9 +29,19 @@ group :development, :test do
   gem 'minitest-rails'
   gem 'minitest-rails-capybara'
 
+  # Manage security
+  gem 'brakeman', require: false
+
   # Overcommit
   gem 'overcommit'
+
+  # Better errors - more descriptive for development
+  gem 'better_errors'
 
 end
 
 gem 'simplecov','0.12.0' , require: false, group: :test
+
+# Manage environnement variables
+gem 'dotenv-rails', groups: [:development, :test, :production]
+
