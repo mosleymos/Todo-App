@@ -28,7 +28,7 @@ class TodoListsController < ApplicationController
 
     respond_to do |format|
       if @todo_list.save
-        format.html { redirect_to @todo_list, notice: 'Todo list was successfully created.' }
+        format.html { redirect_to @todo_list, notice: I18n.t('todo.list.created' ) }
         format.json { render :show, status: :created, location: @todo_list }
       else
         format.html { render :new }
@@ -56,7 +56,7 @@ class TodoListsController < ApplicationController
   def destroy
     @todo_list.destroy
     respond_to do |format|
-      format.html { redirect_to root_url, notice: 'Todo list was successfully destroyed.' }
+      format.html { redirect_to root_url, notice: I18n.t('todo.list.destroyed') }
       format.json { head :no_content }
     end
   end
