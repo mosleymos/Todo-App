@@ -5,3 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Create simple lists
+todolist =  TodoList.create({
+    title: "First List of task"  ,
+    description: "List of task to do as an example"
+  })
+
+# Create simple Tasks
+TodoItem.create({
+  todo_list_id: todolist.id,
+  content: "1ere tache"
+})
+
+TodoItem.create({
+  todo_list_id: todolist.id,
+  content: "2eme tache"
+})
