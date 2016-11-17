@@ -44,5 +44,5 @@ gem 'rails-controller-testing'
 gem 'simplecov', require: false, group: :test
 
 # Manage environnement variables
-gem 'dotenv-rails', groups: [:development, :test, :production]
+gem 'dotenv-rails'
 
