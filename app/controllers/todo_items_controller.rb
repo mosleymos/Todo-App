@@ -9,17 +9,17 @@ class TodoItemsController < ApplicationController
 
   def destroy
     if @todo_item.destroy
-      flash[:success] = I18n.t 'todo.item.destroyed'
+      flash[:success] = I18n.t('todo.item.destroyed')
       redirect_to @todo_list
     else
-      flash[:error] =  I18n.t 'todo.item.error'
+      flash[:error] =  I18n.t('todo.item.error')
       redirect_to @todo_list
     end
   end
 
   def complete
     @todo_item.update_attribute(:completed_at, Time.now)
-    redirect_to @todo_list, notice: I18n.t 'todo.item.completed'
+    redirect_to @todo_list, notice: I18n.t('todo.item.completed')
   end
 
   private

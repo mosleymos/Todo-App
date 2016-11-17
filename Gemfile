@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.2.0'
+gem 'rails', '5.0.0'
 gem 'sqlite3'
-gem 'sass-rails', '~> 4.0.3'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'jbuilder'
+gem 'sdoc',        group: :doc
 
 gem 'spring',        group: :development
 
@@ -17,11 +17,11 @@ gem 'spring',        group: :development
 gem 'haml-rails', '~> 0.9'
 
 group :development, :test do
-  gem 'annotate', '2.6.5'
-  gem 'guard', '2.14.0'
-  gem 'guard-livereload', '2.5.2'
-  gem 'guard-minitest', '2.4.6'
-  gem 'rubocop','0.43.0', require: false
+  gem 'annotate'
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-minitest'
+  gem 'rubocop', require: false
   gem 'pry'
 
   # Some gems for integration tests
@@ -40,7 +40,8 @@ group :development, :test do
 
 end
 
-gem 'simplecov','0.12.0' , require: false, group: :test
+gem 'rails-controller-testing'
+gem 'simplecov', require: false, group: :test
 
 # Manage environnement variables
 gem 'dotenv-rails', groups: [:development, :test, :production]
