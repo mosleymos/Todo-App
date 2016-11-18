@@ -4,3 +4,7 @@
     %p.todo_list_sub_title
       = todo_list.description
 
+    .links
+      = link_to 'Edit', edit_todo_list_path(todo_list)
+      |
+      \#{link_to 'Delete', todo_list_path(todo_list), method: :delete, data: { confirm: "Are you sure?" }}

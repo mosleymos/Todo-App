@@ -1,3 +1,6 @@
 = form_for([@todo_list, @todo_list.todo_items.build]) do |f|
   = f.text_field :content, placeholder: "New Todo"
   = f.submit
+
+  %h4.todo_list_title
+    = link_to 'Retour accueil', root_path
