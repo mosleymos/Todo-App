@@ -3,8 +3,8 @@
 # Table name: todo_lists
 #
 #  id          :integer          not null, primary key
-#  title       :string(255)      not null
-#  description :text             default("No description available")
+#  title       :string           not null
+#  description :text             default("")
 #  created_at  :datetime
 #  updated_at  :datetime
 #

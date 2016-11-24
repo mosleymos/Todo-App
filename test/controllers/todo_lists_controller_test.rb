@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: todo_lists
+#
+#  id          :integer          not null, primary key
+#  title       :string           not null
+#  description :text             default("")
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
 require 'test_helper'
 
 class TodoListsControllerTest < ActionController::TestCase

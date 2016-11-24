@@ -10,10 +10,10 @@
   .field
     = f.label :title
     %br/
-    = f.text_field :title
+    = f.text_field :title, :placeholder => 'Enter Todo list title'
   .field
     = f.label :description
     %br/
-    = f.text_area :description
+    = f.text_area :description, :placeholder => 'Enter Todo list description'
   .actions
     = f.submit
