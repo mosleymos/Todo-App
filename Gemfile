@@ -58,6 +58,7 @@ group :development, :test , :performance do
 end
 
 gem 'simplecov', require: false, group: :test
+gem 'coveralls', require: false
 
 # Better server
 gem 'thin', '1.7.0'
