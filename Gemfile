@@ -23,6 +23,7 @@ group :development, :test do
 
   gem 'rubocop', require: false
   gem 'pry', '0.10.4'
+  gem 'rails_best_practices', '1.17.0'
 
 
   # Some gems for integration tests
@@ -35,6 +36,7 @@ group :development, :test do
 
   # Manage security
   gem 'brakeman', require: false
+  gem 'rack-attack', '5.0.1'
 
   # Overcommit
   gem 'overcommit'
