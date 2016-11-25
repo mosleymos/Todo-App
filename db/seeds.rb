@@ -6,19 +6,21 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+require 'faker'
 # Create simple lists
 todolist =  TodoList.create({
-    title: "First List of task"  ,
-    description: "List of task to do as an example"
+    title: Faker::Name.title,
+    description: Faker::Hipster.sentence
   })
 
 # Create simple Tasks
 TodoItem.create({
   todo_list_id: todolist.id,
-  content: "1ere tache"
+  content: Faker::Hipster.paragraph
+
 })
 
 TodoItem.create({
   todo_list_id: todolist.id,
-  content: "2eme tache"
+  content: Faker::Hipster.paragraph
 })

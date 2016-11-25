@@ -54,6 +54,7 @@ gem 'rails-controller-testing', '1.0.1'
 group :development, :test , :performance do
   gem 'rails-perftest'
   gem 'ruby-prof'
+  gem 'faker', '~> 1.6.6', require: true
 end
 
 gem 'simplecov', require: false, group: :test
