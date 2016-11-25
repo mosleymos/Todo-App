@@ -5,7 +5,7 @@ Todo App
 
 ## Week 6 of my 12 in 12 Challenge
 
-[![Build Status](https://travis-ci.org/mosleymos/Todo-App.svg?branch=master)](https://travis-ci.org/mosleymos/Todo-App) [![Dependency Status](https://gemnasium.com/badges/github.com/mosleymos/Todo-App.svg)](https://gemnasium.com/github.com/mosleymos/Todo-App)
+[![Build Status](https://travis-ci.org/mosleymos/Todo-App.svg?branch=master)](https://travis-ci.org/mosleymos/Todo-App) [![Dependency Status](https://gemnasium.com/badges/github.com/mosleymos/Todo-App.svg)](https://gemnasium.com/github.com/mosleymos/Todo-App) [![Coverage Status](https://coveralls.io/repos/github/mosleymos/Todo-App/badge.svg?branch=master)](https://coveralls.io/github/mosleymos/Todo-App?branch=master)
 
 
 ### Goal
