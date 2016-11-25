@@ -55,6 +55,9 @@ end
 
 gem 'simplecov', require: false, group: :test
 
+# Better server
+gem 'thin', '1.7.0'
+
 # Manage environnement variables
 gem 'dotenv-rails'
 
