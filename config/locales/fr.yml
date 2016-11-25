@@ -25,11 +25,13 @@ en:
   todo:
     list:
       create: "Todo list created"
+      created: "Todo list created"
       destroyed: "Todo list destroyed"
       error: "Todo list could not be deleted"
       completed: "Todo list completed"
     item:
       create: "Todo item created"
+      created: "Todo list created"
       destroyed: "Todo item destroyed"
       error: "Todo item could not be deleted"
       completed: "Todo item completed"
