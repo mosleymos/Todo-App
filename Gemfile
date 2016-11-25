@@ -9,6 +9,9 @@ gem 'jbuilder', '2.6.0'
 gem 'sdoc',        group: :doc
 gem 'spring',        group: :development
 
+# Serializers
+gem 'active_model_serializers', '~> 0.10.0'
+
 # Rails haml templates
 gem 'haml-rails', '~> 0.9'
 

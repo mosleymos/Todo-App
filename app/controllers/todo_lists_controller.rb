@@ -10,6 +10,18 @@ class TodoListsController < ApplicationController
   # GET /todo_lists/1
   # GET /todo_lists/1.json
   def show
+    @todo_list = TodoList.find params[:id]
+    if @todo_list
+      respond_to do |format|
+        format.html
+        format.json{ render json: @todo_list  }
+      end
+    else
+      respond_to do |format|
+        format.html
+        format.json{ render json: @todo_list.errors  }
+      end
+    end
   end
 
   # GET /todo_lists/new
