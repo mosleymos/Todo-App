@@ -26,6 +26,7 @@ group :development, :test do
 
   gem 'rubocop', require: false
   gem 'pry', '0.10.4'
+  gem 'pry-doc'
   gem 'rails_best_practices', '1.17.0'
 
 
@@ -65,4 +66,3 @@ gem 'thin', '1.7.0'
 
 # Manage environnement variables
 gem 'dotenv-rails'
-
