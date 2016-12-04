@@ -19,3 +19,6 @@ coverage/
 
 # Ignore secrets
 .env
+
+# Nodes modules
+node_modules/
