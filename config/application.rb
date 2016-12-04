@@ -22,5 +22,8 @@ module Todo
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
     config.middleware.use Rack::Attack
+
+    # Load other folder for rails application
+    config.autoload_paths += %W(#{Rails.root}/app/modules)
   end
 end
