@@ -1,17 +1,18 @@
-# frozen_string_literal: true
+# TODO: to many self
 require 'rack'
 module StaticContent
-  def self.hello(status = 500, body = '')
+  def self.response(status=500, body='Aucun body')
     app = proc do |_env|
       [status.to_s, { 'Content-Type' => 'text/html' }, [body.to_s]]
     end
     app
   end
 
-  def self.about(status = 500, body = '')
-    app = proc do |_env|
-      [status.to_s, { 'Content-Type' => 'text/html' }, [body.to_s]]
-    end
-    app
+  def self.hello
+    response(200, '<h1>Hello my rack</h1>')
+  end
+
+  def self.about
+    response(200, '<h1>About page</h1>')
   end
 end

@@ -8,8 +8,8 @@ Rails.application.routes.draw do
     end
   end
 
-  mount StaticContent::hello(200,'<h1>Hello page</h1>'), :at => "/hello"
-  mount StaticContent::hello(200,'<h1>About page</h1>'), :at => "/about"
+  mount StaticContent::hello, :at => "/hello"
+  mount StaticContent::about, :at => "/about"
 
 
   root "todo_lists#index"
