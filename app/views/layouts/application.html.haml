@@ -7,4 +7,5 @@
     = render 'layouts/notifications'
 
     .container
+      %div{ :id => 'js_mgnt', :data => { controller_name: controller.controller_name, controller_action: controller.action_name } }
       = yield
