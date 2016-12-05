@@ -3,7 +3,7 @@
 # Table name: todo_items
 #
 #  id           :integer          not null, primary key
-#  content      :string           not null
+#  content      :string(500)      not null
 #  todo_list_id :integer
 #  created_at   :datetime
 #  updated_at   :datetime

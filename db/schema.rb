@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 20141012150146) do
 
   create_table "todo_items", force: :cascade do |t|
-    t.string   "content",      null: false
+    t.string   "content",      limit: 500, null: false
     t.integer  "todo_list_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -22,8 +22,8 @@ ActiveRecord::Schema.define(version: 20141012150146) do
   end
 
   create_table "todo_lists", force: :cascade do |t|
-    t.string   "title",                    null: false
-    t.text     "description", default: ""
+    t.string   "title",       limit: 500,                null: false
+    t.text     "description", limit: 10000, default: ""
     t.datetime "created_at"
     t.datetime "updated_at"
   end
