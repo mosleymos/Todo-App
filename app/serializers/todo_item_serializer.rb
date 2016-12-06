@@ -8,6 +8,7 @@
 #  created_at   :datetime
 #  updated_at   :datetime
 #  completed_at :datetime
+#  done         :boolean          default(FALSE)
 #
 # Indexes
 #
@@ -15,5 +16,5 @@
 #
 
 class TodoItemSerializer < ActiveModel::Serializer
-  attributes :id, :content, :completed_at
+  attributes :id, :content, :completed_at, :done
 end
