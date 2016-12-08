@@ -11780,7 +11780,7 @@ $(function(){
   var ActionController = $('#js_mgnt').data('controller-name');
   log(ActionName);
   log(ActionController);
-  log("Modification pour voir si tout est ok");
+  log('Modification pour voir si tout est ok');
 });
 
 },{"jquery":1,"underscore":2}]},{},[3]);
