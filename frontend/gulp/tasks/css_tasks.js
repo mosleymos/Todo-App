@@ -1,5 +1,6 @@
 var gulp = require('gulp')
-var sass = require('gulp-ruby-sass');       var cleanCSS    = require('gulp-clean-css');
+var sass = require('gulp-ruby-sass');
+var cleanCSS = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano');
 var notify  = require('gulp-notify');
