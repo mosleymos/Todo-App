@@ -1,9 +1,9 @@
 var config = {
     jsBeginFile: './src/js/app.js',
-    jsEndingFolder: './public/js/',
+    jsEndingFolder: './build/public/js/',
     scssFile:'src/css/*.scss',
     cssBeginFolder:'./src/css/',
-    cssEndingFolder:'./public/css/'
+    cssEndingFolder:'./build/public/css/'
 };
 
 module.exports = config;
