@@ -1,6 +1,6 @@
 var config = {
     jsBeginFile: './src/js/app.js',
-    jsEndingFolder: './app/assets/javascripts/'
+    jsEndingFolder: './public/js/'
 };
 
 module.exports = config;

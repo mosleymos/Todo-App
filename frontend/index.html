@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tests</title>
+  </head>
+  <body>
+    <h1>Some body expect rack cors work</h1>
+    <script type="text/javascript" charset="utf-8">
+      var log = function(something){ return console.log(something) }
+      var xhr = new XMLHttpRequest
+      xhr.open('GET', 'http://127.0.0.1:3000/todo_lists/1.json',true)
+      xhr.onreadystatechange = function() {
+          if(xhr.readyState === 4) { // done
+              if(xhr.status === 200) { // complete
+                     log(JSON.parse(xhr.responseText))
+                  }
+            }
+
+      };
+      xhr.send(null)
+
+    </script>
+
+  </body>
+</html>
