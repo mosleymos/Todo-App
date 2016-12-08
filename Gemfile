@@ -56,6 +56,9 @@ group :development, :test , :performance do
   gem 'rails-perftest'
   gem 'ruby-prof'
   gem 'faker', '~> 1.6.6', require: true
+
+  # Manage development
+  gem 'rack-cors', :require => 'rack/cors'
 end
 
 gem 'simplecov', require: false, group: :test

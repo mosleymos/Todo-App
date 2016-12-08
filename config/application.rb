@@ -23,10 +23,22 @@ module Todo
     # config.i18n.default_locale = :de
     if Rails.env != 'performance'
     # Rack attack
-    config.middleware.use Rack::Attack
+    # seems some problem see
+    # http://stackoverflow.com/questions/19391468/gitlab-rack-attack-insallation
+    # config.middleware.use Rack::Attack
     end
 
     # Load other folder for rails application
     config.autoload_paths += %W(#{Rails.root}/app/modules)
+
+    # Rack-cors for development environnement
+    if Rails.env.development?
+      config.middleware.insert_before 0, Rack::Cors do
+        allow do
+          origins '*'
+          resource '*', :headers => :any, :methods => [:get, :post, :options]
+        end
+      end
+    end
   end
 end
