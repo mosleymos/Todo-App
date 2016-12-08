@@ -9,7 +9,7 @@ gulp.task('linting', linting.lint);
 gulp.task('css', cssProcess.work );
 
 // Launch static server
-gulp.task('server', browsersync.launch)
+gulp.task('server', browsersync.launch);
 
 // watch tasks
 
