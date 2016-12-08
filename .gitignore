@@ -22,3 +22,6 @@ coverage/
 
 # Nodes modules
 node_modules/
+
+# Ignore sass-cache
+.sass-cache
